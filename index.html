@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="container mx-auto text-center">
+    <h1 class="text-5xl font-semibold text-slate-700 my-4 font-serif">
+      Temperature Converter
+    </h1>
+
+    <main>
+      <form class="max-w-sm mx-auto my-14 text-left">
+        <div class="mb-5">
+          <label
+            for="tempF"
+            class="block mb-2 text-sm font-medium text-gray-900"
+            >Enter temperature in Fahrenheit(F)</label
+          >
+          <input
+            type="text"
+            id="tempF"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5"
+            placeholder="32"
+            required
+          />
+        </div>
+
+        <button
+          type="button"
+          id="convert"
+          class="text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+        >
+          Convert to Celsius...
+        </button>
+      </form>
+
+      <div
+        id="showC"
+        class="max-w-sm mx-auto py-8 px-6 bg-slate-800 text-3xl text-white font-semibold rounded-lg"
+      ></div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
